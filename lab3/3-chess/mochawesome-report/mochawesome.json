@@ -1,0 +1,100 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-10-24T13:32:37.473Z",
+    "end": "2026-10-24T13:32:39.899Z",
+    "duration": 2426,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "07698580-e1b7-4d88-9c45-856db1d26ef2",
+      "title": "",
+      "fullFile": "cypress/e2e/chess.cy.js",
+      "file": "cypress/e2e/chess.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e4a84783-9164-48a4-97c4-52ac529d6c70",
+          "title": "Chess",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should move a white pawn from e2 to e4",
+              "fullTitle": "Chess should move a white pawn from e2 to e4",
+              "timedOut": null,
+              "duration": 444,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(cell(2, 5)).click();\ncy.get(cell(4, 5)).click();\ncy.get(cell(2, 5)).should('be.empty');\ncy.get(cell(4, 5)).find('img').should('have.attr', 'src').and('include', 'pawn_white');",
+              "err": {},
+              "uuid": "f09bf245-c4bc-4601-a6f7-0583013eb884",
+              "parentUUID": "e4a84783-9164-48a4-97c4-52ac529d6c70",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f09bf245-c4bc-4601-a6f7-0583013eb884"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 444,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "8.1.1"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.3.2"
+    }
+  }
+}
